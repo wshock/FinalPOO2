@@ -10,6 +10,15 @@ app.set('views','./views');
 app.set("port",3000);
 
 
+import { getConnection } from "./database.js";
+
+app.get("/", async (req, res) => {
+    
+})
+
+
+
+
 
 
 
