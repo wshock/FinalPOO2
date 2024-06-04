@@ -1,0 +1,93 @@
+.form-container{
+    width: 450px;
+    background-color:white;
+    border-radius: 10px;
+    padding: 5px 30px 30px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-bottom: 5px solid #999999;
+    border-right: 5px solid #999999;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    font-size: larger;
+}
+
+  
+.sr-only{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.form-container input[type="text"],input[type="password"], button {
+    border: unset;
+    border-radius: 4px;
+    padding: 15px 35px;
+    background-color: #eff1fd;
+    font-size: medium;
+}
+
+button{
+    color: white;
+    background-color: #767676;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #4f4f4f;
+}
+
+h1+p{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.titleIniciaSesion{
+    text-align: center;
+    color: #eb32aa;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.userInput-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+.userInput-container i{
+    position: absolute;
+    
+}
+
+
+.error{
+    color: rgb(243, 95, 186);
+    margin: 0;
+    text-align: center;
+}
+
+.escondido{
+    display: none;
+}
+ 
