@@ -13,7 +13,7 @@ app.set("port",3000);
 import { getConnection } from "./database.js";
 
 app.get("/", async (req, res) => {
-    
+    res.render('login');
 })
 
 app.post("/login", async (req,res) => {

@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicia Sesión</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    
+    <div class="form-container">
+        <h1 class="titleIniciaSesion">Inicia Sesión</h1>
+       
+        <form id="login-form">
+
+            <div class="userInput-container">
+                <label for="user" class="sr-only">User</label>
+                <input type="text" name="user" id="user" placeholder="Nombre de usuario">
+                
+
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" name="password" id="password" placeholder="Contraseña">
+            </div>    
+        
+            <button type="submit">Iniciar sesión</button>
+            <p class="error escondido">Error, verifica tu usuario o contraseña.</p>
+        </form>
+    </div>
 </body>
 </html>
