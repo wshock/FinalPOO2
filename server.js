@@ -32,7 +32,14 @@ app.post("/login", async (req,res) => {
 })
 
 
+app.post("/salchipaPa", async (req,res) => {
+    const {cedula} = req.body;
 
+    const connection = await database.getConnection();
+    await connection.query("INSERT INTO registros (cedula,date) VALUES (?, NOW())", [cedula]);
+
+    res.send("salchipapa registrada");
+})
 
 
 

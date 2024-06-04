@@ -1,7 +1,6 @@
-document.getElementById("login-form").addEventListener("submit", async (e) => {
+document.getElementById("register-form").addEventListener("submit", async (e) => {
     e.preventDefault();
-    const user = document.getElementById("user").value
-    const password = document.getElementById("password").value
+    const cedula = document.getElementById("cedula").value;
 
     // Validar que se haya ingresado un usuario
     if (!user.trim()) {
@@ -18,12 +17,12 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
 
 
     try {
-        const respuesta = await fetch("http://localhost:3000/login", {
+        const respuesta = await fetch("http://localhost:3000/salchipaPa", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ user, password  })
+            body: JSON.stringify({ cedula })
         })
         if (respuesta.ok){
             window.location.href = "/salchipaPa";
