@@ -9,11 +9,14 @@ app.set('view engine', 'ejs');
 app.set('views','./views');
 app.set("port",3000);
 
-
 import { getConnection } from "./database.js";
 
 app.get("/", async (req, res) => {
     res.render('login');
+})
+
+app.get("/registro", async (req, res) => {
+    res.render('regDocument')
 })
 
 app.post("/login", async (req,res) => {
@@ -40,6 +43,8 @@ app.post("/salchipaPa", async (req,res) => {
 
     res.send("salchipapa registrada");
 })
+
+
 
 
 

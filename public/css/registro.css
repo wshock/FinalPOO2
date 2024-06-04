@@ -12,7 +12,7 @@
 form{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 body{
@@ -65,14 +65,14 @@ h1+p{
     text-align: center;
     color: #616161;
     margin-top: 15px;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
     font-weight: bold;
 }
 
 .userInput-container{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
     position: relative;
 }
 
@@ -80,4 +80,3 @@ h1+p{
     position: absolute;
     
 }
-
